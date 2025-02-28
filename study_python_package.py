@@ -12,7 +12,10 @@ path_in = "./images/*.png"
 path_out = "./image_out/result.gif"
 
 # 첫 번째 이미지 & 모든 이미지 리스트 팩킹
-img, *imgs = [Image.open(f) for f in sorted(glob.glob(path_in))]
+# img, *imgs = [Image.open(f) for f in sorted(glob.glob(path_in))]
+
+# 리사이즈
+img, *imgs = [Image.open(f).resize((320, 240)) for f in sorted(glob.glob(path_in))]
 
 # 이미지 저장
 img.save(
