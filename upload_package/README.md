@@ -1,9 +1,11 @@
-# pygifconvt
+# IMG2GIF_package
 
 ## Table of Contents
-  * [Installation](#installation)
-  * [Quick start](#quick-start)
-  * [Features](#features)
+- [IMG2GIF\_package](#img2gif_package)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Quick start](#quick-start)
+  - [Features](#features)
   
 ## Installation
 
@@ -19,7 +21,7 @@ $ pip install git+'repository'
 
 ## Quick start
 ```python
- >>> from pygifconvt.converter import GifConverter
+ >>> from IMG2GIF_package.converter import GifConverter
  >>> c = GifConverter("your original images path", 'your gif output path', (320,240))
  >>> c.convert_gif()
 ```
